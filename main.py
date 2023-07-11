@@ -14,8 +14,8 @@ player_paddle = pygame.Rect(50, screen_height/2 - 70, 20, 140)
 opponent_paddle = pygame.Rect(screen_width - 70, screen_height/2 - 70, 20, 140)
 
 # Set up the game variables
-ball_speed_x = 2
-ball_speed_y = 2
+ball_speed_x = 1
+ball_speed_y = 1
 player_speed = 0
 opponent_speed = 1
 player_score = 0
@@ -74,7 +74,7 @@ while True:
     screen.fill((0, 0, 0))
     pygame.draw.rect(screen, (255, 255, 255), player_paddle)
     pygame.draw.rect(screen, (255, 255, 255), opponent_paddle)
-    pygame.draw.ellipse(screen, (255, 255, 255), ball)
+    pygame.draw.ellipse(screen, (255, 0, 0), ball)
     pygame.draw.aaline(screen, (255, 255, 255), (screen_width/2, 0), (screen_width/2, screen_height))
 
     # Draw the scores
